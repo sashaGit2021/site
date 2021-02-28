@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Git</h1>
+    <ul>
+        <li>масло</li>
+        <li>хлеб</li>
+        <li>вода</li>
+        <li>рыба</li>
+    </ul>
+
+    <script>
+        let list = document.getElementsByTagName('ul')[0];
+        console.log(list.firstChild);
+        let newItemLast = document.createElement('li');
+        let newTextLast = document.createTextNode('деревенская сметана');
+        newItemLast.appendChild(newTextLast);
+        // console.log(newItemLast);
+        // console.log(newTextLast);
+        list.appendChild(newItemLast);
+
+        let newItemFirst = document.createElement('li');
+        let newTextFirst = document.createTextNode('мороженное');
+
+        newItemFirst.appendChild(newTextFirst);
+        console.log(newItemFirst);
+
+        list.insertBefore(newItemFirst, list.firstChild);
+
+
+
+
+
+    </script>
+</body>
+
+</html>
